@@ -36,12 +36,6 @@ bitcrust source is proprietary and not published. Any references to
 internal files or commits in issue comments are for context only;
 you can't clone bitcrust from here.
 
-## Support for purchase issues
-
-App Store billing, refunds, promo codes, and anything else that
-needs to see your purchase details go to **support@anode-labs.com**
-— not Issues.
-
 ---
 
 bitcrust is maintained by **Mirko Caserta** (Anode Labs). It is an
