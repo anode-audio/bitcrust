@@ -1,0 +1,107 @@
+name: Bug report
+description: Something in bitcrust isn't working as it should.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. The more specific
+        you can be, the faster it gets fixed.
+
+  - type: input
+    id: version
+    attributes:
+      label: bitcrust version
+      description: Shown in the ABOUT panel (question-mark icon in the header). Example: `1.0.1 (1.0.1.611)`.
+      placeholder: e.g. 1.0.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS (App Store)
+        - iPadOS (App Store)
+        - Windows (Gumroad)
+        - Linux (Gumroad)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Plugin format
+      description: Which bitcrust build you're running.
+      options:
+        - Standalone
+        - AUv3 (iPadOS)
+        - VST3 (Windows / Linux)
+        - AU (macOS — non-App-Store build)
+        - LV2 (Linux)
+    validations:
+      required: true
+
+  - type: input
+    id: host
+    attributes:
+      label: Host app (if plugin)
+      description: The DAW or AUv3 host running bitcrust. Include its version if you know it. Leave blank if Standalone.
+      placeholder: e.g. Loopy Pro 1.5.7, AUM 1.5, Logic Pro 11.0.1, Reaper 7.20, FL Studio 21.2
+
+  - type: input
+    id: os
+    attributes:
+      label: OS version
+      description: Example iPadOS 26.4, macOS 15.2, Windows 11 24H2, Ubuntu 24.04.
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device / hardware
+      description: For iPad, the exact model (iPad Pro M4, iPad Air M2, etc.). For desktop, CPU is fine (M2 Pro, Intel i7-12700, Ryzen 7 5800X). Skip if irrelevant.
+
+  - type: textarea
+    id: describe
+    attributes:
+      label: What happened
+      description: What did you see, and what did you expect?
+      placeholder: |
+        When I tap the FX slot dropdown on the EFFECTS tab, nothing happens.
+        I expected the list of effect types to appear.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps someone else could follow to see the same thing.
+      placeholder: |
+        1. Open bitcrust (AUv3) inside Loopy Pro
+        2. Load the INIT preset
+        3. Go to the EFFECTS tab
+        4. Tap an empty slot's TYPE dropdown
+        5. Nothing happens
+    validations:
+      required: true
+
+  - type: textarea
+    id: extras
+    attributes:
+      label: Screenshots, screen recordings, audio clips
+      description: Drag and drop files into this field. A 10-second screen recording is worth 1000 words.
+
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+        - label: I'm on the latest bitcrust version (or I'm reporting something specific to an older one).
+          required: true

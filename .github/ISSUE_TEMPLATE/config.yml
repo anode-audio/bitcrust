@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Purchase / billing / refund support
+    url: mailto:support@anode-labs.com
+    about: App Store or Gumroad billing questions go to email, not Issues.
+  - name: General discussion / questions
+    url: https://github.com/anode-audio/bitcrust/discussions
+    about: Tips, preset sharing, "is this a bug?" — prefer Discussions over Issues.
+  - name: Product page + manual
+    url: https://anode-labs.com/bitcrust/
+    about: Features, specs, and the full manual.

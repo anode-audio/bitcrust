@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest an improvement or new capability for bitcrust.
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Clear use cases get the most
+        traction — a concrete "I want to do X but can't because Y"
+        beats "please add X" every time.
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: What are you trying to do?
+      description: Describe the musical or workflow scenario, not the fix. Example — "I want to set a static pulse-width value on VCO 1 without having to use the mod matrix."
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: How are you working around it today?
+      description: "Example: I'm using an LFO at 0 Hz with fixed offset, which works but burns a mod slot."
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see
+      description: If you have a concrete UI / parameter idea, put it here. Don't worry about implementation — that's on me. Skip if you only know the pain, not the shape of the fix.
+
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and discussions and didn't find this suggestion.
+          required: true
