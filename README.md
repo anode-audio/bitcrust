@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./.github/hero.png" alt="bitcrust — polyphonic SID-inspired synthesizer" width="720" />
+</p>
+
 # bitcrust
 
 Public bug tracker + feature requests for **bitcrust**, the polyphonic
